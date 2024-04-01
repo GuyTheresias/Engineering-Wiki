@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schools</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
+    <style>
+        body {
+            background-color: antiquewhite;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .nav1 {
+            background-color: rgba(135, 106, 87, 255);
+            color: #ede2d7;
+        }
+
+        .logo {
+            height: 125px;
+        }
+
+        .nav-link {
+            color: white;
+            border-radius: 10px;
+
+        }
+
+        .nav-link:hover {
+            background-color: antiquewhite;
+            border-radius: 10px;
+            color: #876a57;
+        }
+
+        .navbar-toggler {
+            background-color: antiquewhite;
+
+        }
+
+        /* 
+        .sIMG {
+            height: 300px;
+            width: 450px;
+        } */
+        .sIMG {
+            filter: saturate(0%);
+            width: 10%;
+            height: 300px;
+            border: 3px solid #876a57;
+            object-fit: cover;
+            border-radius: 12px;
+            transition: all ease 0.3s;
+            cursor: pointer;
+        }
+
+        .sIMG:hover {
+            filter: saturate(100%);
+            width: 25%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="nav1 container-fluid mt-3 text-center p-3">
+        <h1>
+            <img src="/Imgs/Logo.png" class="logo img-fluid" alt="Electrical Engineering Logo">
+            Electrical Engineering Wiki Page
+        </h1>
+    </div>
+
+    <nav class="nav1 navbar navbar-expand-lg  mt-3 ">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Overview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Statistical Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Future Challenges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="schools.html">Schools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="members.html">Members</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="worksCited.html">Works Cited</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid" id="schools">
+        <h1 class="text-center mt-3" style="color: #876a57;">Schools</h1>
+        <p class="text-center text-secondary">Click to enlarge and show information</p>
+        <div class="school-imgs text-center mt-3">
+            <img src="School Imgs/Florida Polytechnic University.png" alt="Florida Polytechnic University" class="sIMG"
+                onclick="showFPU()">
+            <img src="School Imgs/Florida Institute of Technology.png" alt="Florida Institute of Technology"
+                class="sIMG" onclick="showFIT()">
+            <img src="School Imgs/University of Central Florida.png" alt="University of Central Florida" class="sIMG"
+                onclick="showUCF()">
+            <img src="School Imgs/Florida State University.png" alt="Florida State University" class="sIMG"
+                onclick="showFSU()">
+            <img src="School Imgs/University of Florida.png" alt="University of Florida" class="sIMG"
+                onclick="showUF()">
+        </div>
+    </div>
+    <div class="container-fluid" id="vFPU" hidden>
+        <h1 class="text-center mt-3" style="color: #876a57;">Campus Video</h1>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <video src="School Videos/Florida Polytechnic University.mp4" controls width="100%"
+                    type="video/mp4"></video>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="iFPU" hidden>
+        <h1 class="text-center mt-3" style="color: #876a57;">Florida Polytechnic University</h1>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <p>
+                    Florida Polytechnic University is a public university located in Lakeland, FL. The school has a
+                    total of
+                    1,531 undergraduate students. Tuition and fees average around $4,940, and room and board costs
+                    another
+                    $12,219 per year. After financial aid, the total cost of attendance averages out to around $8,895 a
+                    year.
+                    Florida Poly has an 18:1 student-to-faculty ratio and a 31% 4-year graduation rate. It is important
+                    to note,
+                    however, that Florida Poly primarily has engineering majors enrolled there. It is typical for
+                    engineering
+                    students to graduate in 5-6 years, even without failing any classes, just because of the higher
+                    course load.
+                    Florida Poly is a somewhat selective school in its admissions process, with a 47% acceptance rate.
+                    The
+                    middle 50 percent of accepted students have a 1230-1390 SAT, a 26-31 ACT, and a 3.5 GPA [2]. Since
+                    Florida
+                    Polytechnic is so new, with it only having been around since 2012, there is limited data on
+                    electrical
+                    engineering student outcomes [8]. More information can be found <a href="https://floridapoly.edu/"
+                        target="_blank" class="text-decoration-none"><b>here</b></a>.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="vFIT" hidden>
+        <h1 class="text-center mt-3" style="color: #876a57;">Campus Video</h1>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <video src="School Videos/Florida Tech Campus Tour.mp4" controls width="100%" type="video/mp4"></video>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="iFIT" hidden>
+        <h1 class="text-center mt-3" style="color: #876a57;">Florida Institute of Technology</h1>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <p>
+                    Florida Institute of Technology is a private university located in Melbourne, FL. The school has a
+                    total of 3,374 undergraduate students. Tuition and fees average around $44,360, and room and board
+                    costs another $14,340 per year. After financial aid, the total cost of attendance averages out to
+                    around $31,172 a year. Florida Tech has a 14:1 student-to-faculty ratio and a 50% 4-year graduation
+                    rate. The most popular majors at this school are also engineering, so this is an impressive
+                    graduation rate. Florida Tech is a somewhat selective school in its admissions process, with a 50%
+                    acceptance rate. The middle 50 percent of accepted students have an 1120-1320 SAT, a 22-28 ACT, and
+                    a 3.5 GPA [1]. While the tuition is much more expensive, one of the benefits of going to Florida
+                    Tech over a public school is the newer lab facilities. It is also mentioned that those with a
+                    bachelor’s degree in EE from Florida Tech have gone to graduate school at prestigious universities
+                    like Stanford and Georgia Tech [5]. More information can be found <a target="_blank" class="text-decoration-none"
+                        href="https://www.fit.edu/">here</a>.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
